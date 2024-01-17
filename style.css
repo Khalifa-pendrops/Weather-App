@@ -8,9 +8,71 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     line-height: 1.2;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./asset/BG\ photo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    
+}
+/* left page starts here */
+
+
+
+
+
+
+/* right page starts here */
+.right-page{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    height: 45%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px;
+    width: 20rem;
+}
+.top-part{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: .4rem;
+    color: skyblue;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;   
+}
+.middle-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem auto;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: rgb(66, 66, 66);
 }
 span::after{
     content: "0";
     vertical-align: text-top;
     font-size: xx-small;
+}
+.bottom-part{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: .8rem;
+    margin-top: 1rem;
+}
+.temp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    color: rgb(66, 66, 66);
 }
