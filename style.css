@@ -1,10 +1,10 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     line-height: 1.2;
@@ -17,9 +17,9 @@ body{
     background-position: center;
     background-size: cover;
 }
-.container{
-    
-}
+
+.container {}
+
 /* left page starts here */
 
 
@@ -28,7 +28,7 @@ body{
 
 
 /* right page starts here */
-.right-page{
+.right-page {
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -37,16 +37,18 @@ body{
     box-shadow: 0 0 10px;
     width: 20rem;
 }
-.top-part{
+
+.top-part {
     display: flex;
     align-items: center;
     width: fit-content;
     gap: .4rem;
     color: skyblue;
     font-size: 1.5rem;
-    margin-bottom: 1rem;   
+    margin-bottom: 1rem;
 }
-.middle-part{
+
+.middle-part {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,31 +58,38 @@ body{
     font-size: 1.2rem;
     font-weight: bolder;
 }
-.degrees{
+
+.degrees {
     color: #fdb813;
 }
-.middle-part, p{
+
+.middle-part,
+p {
     color: #8e44ad;
     font-weight: bolder;
 }
+
 .middle-part,
-h6{
+h6 {
     font-size: .8rem;
     font-weight: bolder;
     color: #2ecc71;
 }
-span::after{
+
+span::after {
     content: "0";
     vertical-align: text-top;
     font-size: xx-small;
 }
-.location{
+
+.location {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: .5rem;
 }
-.bottom-part{
+
+.bottom-part {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -88,7 +97,8 @@ span::after{
     margin-top: 1rem;
     color: rgb(66, 66, 66);
 }
-.temp{
+
+.temp {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,7 +109,8 @@ span::after{
     border-right: 2px solid #000;
     padding-right: 3rem;
 }
-.humidity{
+
+.humidity {
     display: flex;
     justify-content: center;
     align-items: center;
