@@ -55,12 +55,30 @@ body{
     margin: 1rem auto;
     font-size: 1.2rem;
     font-weight: bolder;
-    color: rgb(66, 66, 66);
+}
+.degrees{
+    color: #fdb813;
+}
+.middle-part, p{
+    color: #8e44ad;
+    font-weight: bolder;
+}
+.middle-part,
+h6{
+    font-size: .8rem;
+    font-weight: bolder;
+    color: #2ecc71;
 }
 span::after{
     content: "0";
     vertical-align: text-top;
     font-size: xx-small;
+}
+.location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
 }
 .bottom-part{
     display: flex;
@@ -68,11 +86,24 @@ span::after{
     align-items: center;
     font-size: .8rem;
     margin-top: 1rem;
+    color: rgb(66, 66, 66);
 }
 .temp{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: .5rem;
-    color: rgb(66, 66, 66);
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    border-right: 2px solid #000;
+    padding-right: 3rem;
+}
+.humidity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
 }
