@@ -38,18 +38,21 @@ body {
     margin-bottom: 2rem;
     background: rgba(0, 0, 0, 0.2);
 }
-input{
+
+input {
     padding: .5rem;
     margin: 0 1rem;
     border: none;
     border-radius: 2px;
 }
+
 .left-page,
-input::placeholder{
+input::placeholder {
     text-align: center;
     color: rgba(66, 66, 66, 0.368);
     font-size: .8rem;
 }
+
 button {
     padding: .5rem;
     margin: 0 1rem;
@@ -161,8 +164,12 @@ span::after {
 }
 
 /* media query */
-@media only screen and (max-width: 578px) {
-   .container{
-    display: block;
-   } 
+@media only screen and (max-width: 414px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .1rem;
+    }
 }
