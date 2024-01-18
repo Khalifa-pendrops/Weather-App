@@ -5,11 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
 
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
     <div class="container">
-      <div class="left-page"></div>
+      <div class="left-page">
+        <input
+          type="text"
+          id="city-name"
+          placeholder="Enter city name"
+          name="city-name"
+          required
+        />
+        <button class="submit">Get Device Location</button>
+      </div>
 
       <div class="right-page">
         <div class="top-part">
@@ -24,12 +33,17 @@
         <hr />
 
         <div class="middle-part">
-          <img src="./asset/cloud.svg" alt="" width="80px" />
-          <h1 class="degrees"><span>13</span>C</h1>
-          <h6>Broken Clouds</h6>
+          <img id="weather-icon" src="./asset/cloud.svg" alt="" width="80px" />
+          <h1 class="degrees"><span class="temperature-value">13</span>C</h1>
+          <h6 id="weather-text">Broken Clouds</h6>
           <div class="location">
-            <img src="./asset/location-pin-alt-1-svgrepo-com.svg" alt="" width="20px">
-            <p>Enugu, Nigeria</p>
+            <img
+              src="./asset/location-pin-alt-1-svgrepo-com.svg"
+              alt=""
+              width="20px"
+            />
+            <p id="city">Enugu,</p>
+            <p>Nigeria</p>
           </div>
         </div>
 
@@ -37,22 +51,34 @@
 
         <div class="bottom-part">
           <div class="temp">
-            <img src="./asset/thermometer-warm-svgrepo-com.svg" alt="" width="20px" />
+            <img
+              src="./asset/thermometer-warm-svgrepo-com.svg"
+              alt=""
+              width="20px"
+            />
             <div>
-              <h4><span>17</span>C</h4>
+              <h4><span class="temperature-value">17</span>C</h4>
               <p>Feels fine</p>
             </div>
           </div>
           <div class="humidity">
-            <img src="./asset/water-droplet-reflection-svgrepo-com.svg" alt="" width="30px">
+            <img
+              src="./asset/water-droplet-reflection-svgrepo-com.svg"
+              alt=""
+              width="30px"
+            />
             <div>
-              <h4>84%</h4>
+              <h4 id="humidity-value">84%</h4>
               <p>Humidity</p>
             </div>
           </div>
         </div>
+
+        <div class="error">
+          <h4>City not found, please try again.</h4>
+        </div>
       </div>
     </div>
     <script src="./script.js"></script>
-  </body>
+  </body>
 </html>
