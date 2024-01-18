@@ -20,8 +20,8 @@ body {
 
 .container {
     display: flex;
-    align-items: end;
-    gap: 1rem;
+    align-items: end ;
+    gap: 3rem;
 }
 
 /* left page starts here */
@@ -32,11 +32,13 @@ body {
     justify-content: center;
     gap: 1rem;
     height: 8rem;
-    border-radius: 3px;
+    border-radius: 0.5rem;
+    backdrop-filter: blur(1rem);
     box-shadow: 0 0 10px;
     width: 20rem;
     margin-bottom: 2rem;
-    background: rgba(0, 0, 0, 0.2);
+    position: relative;
+    /*background: rgba(0, 0, 0, 0.2);  I used a backdrop-filter instead*/ 
 }
 
 input {
@@ -44,12 +46,13 @@ input {
     margin: 0 1rem;
     border: none;
     border-radius: 2px;
+    outline: none;
 }
 
 .left-page,
 input::placeholder {
     text-align: center;
-    color: rgba(66, 66, 66, 0.368);
+    color: rgba(15, 14, 14, 0.368);
     font-size: .8rem;
 }
 
@@ -60,6 +63,11 @@ button {
     border: none;
     border-radius: 2px;
     cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+button:hover{
+    font-size: 0.9rem
 }
 
 
@@ -69,8 +77,9 @@ button {
     flex-direction: column;
     padding: 1rem;
     height: 45%;
-    border-radius: 3px;
-    background: rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    backdrop-filter: blur(0.6rem);
+    /*background: rgba(0, 0, 0, 0.2); */
     box-shadow: 0 0 10px;
     width: 20rem;
 }
@@ -104,13 +113,14 @@ button {
 p {
     color: rgba(175, 231, 253, 0.99);
     font-weight: bolder;
+    text-shadow: 2px 2px 4px black;
 }
 
-.middle-part,
-h6 {
+.middle-part h6 {
     font-size: 0.8rem;
     font-weight: bolder;
     color: #f9fffc !important;
+    text-shadow: 2px 2px 4px black;
 }
 
 span::after {
