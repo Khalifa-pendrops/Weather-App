@@ -4,6 +4,7 @@ const data = [
   { city: "Abuja", temperature: 29, humidity: 58 },
   { city: "Jos", temperature: 8, humidity: 69 },
   { city: "Kano", temperature: 36, humidity: 42 },
+  { city: "Ibadan", temperature: 20, humidity: 69 }
 ];
 
 var weatherIcon = document.querySelector("#weather-icon"),
